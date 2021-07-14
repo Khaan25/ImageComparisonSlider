@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compare - 1 line JS - Zia Codes</title>
+
+    <!--==================== CSS FILE ====================-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--==================== METAs ====================-->
+    <meta name="description" content="Accessible Image Compare">
+    <meta name="author" content="Zia Codes">
+    <meta name="keywords" content="Accessible, Image, Compare, ZiaCodes">
+
+</head>
+
+<body>
+
+    <!-- ==================== COMPARE IMAGE ==================== -->
+    <div class="container">
+        <div class="c-compare" style="--value:50%;">
+            <img src="Image.jpg" alt="Color Image" class="c-compare__left">
+            <img src="Image BW.jpg" alt="BW Image" class="c-compare__right">
+            <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50"
+                oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+        </div>
+        <p>&COPY; Photo from <a class="pexels__link" target="blank" href="https://www.pexels.com/">Pexels</a></p>
+    </div>
+
+</body>
+
+</html>
